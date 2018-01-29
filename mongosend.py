@@ -26,7 +26,12 @@ class SensorNode():
             client['sensors'][self.node_id].insert_one(data)
 
 if __name__ == '__main__':
+    # Get device hostname for collection name
     hostname = os.popen('hostname').read().strip('\n')
+
+    # Create SensorNode object with device hostname
     sn = SensorNode(node_id = hostname)
+
+    # Take measurement and send to database
     sn.send_data()
 
