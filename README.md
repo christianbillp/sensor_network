@@ -13,7 +13,9 @@ db=DATABASE
 ```
 
 ## Mongosend
-uses Adafruit_DHT library: https://github.com/adafruit/Adafruit_Python_DHT
+Adafruit_DHT library
+
+https://github.com/adafruit/Adafruit_Python_DHT
 
 
 ## Mongodb server
