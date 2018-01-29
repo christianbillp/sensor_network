@@ -12,6 +12,7 @@ temp.py
 *_temp.pickle
 *.conf
 *.docker
+*.html
 
 # C extensions
 *.so
