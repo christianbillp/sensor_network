@@ -17,6 +17,14 @@ Adafruit_DHT library
 
 https://github.com/adafruit/Adafruit_Python_DHT
 
+PyMongo
+
+https://pypi.python.org/pypi/pymongo
+
+```
+pip install pymongo
+```
+
 
 ## Mongodb server
 https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04
