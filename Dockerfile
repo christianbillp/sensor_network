@@ -1,11 +1,15 @@
-FROM python:slim
+#FROM python:slim
+FROM python:alpine
 
 # Create folder for application
 RUN mkdir /app
 
-# Update apt sources and extra programs
-RUN apt update
-RUN apt install -y git python3-pip nano
+# Update apt sources and extra programs (python:slim)
+#RUN apt update
+#RUN apt install -y git python3-pip nano
+
+# Update apt sources and extra programs (python:alpine)
+RUN apk add --update git python3 nano
 
 # Dependency for DHT22 sensor
 RUN git clone https://github.com/adafruit/Adafruit_Python_DHT.git
