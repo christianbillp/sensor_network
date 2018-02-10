@@ -1,5 +1,8 @@
 FROM python:slim
 
+# Create folder for application
+RUN mkdir /app
+
 # Update apt sources and extra programs
 RUN apt update
 RUN apt install -y git python3-pip nano
@@ -12,6 +15,5 @@ RUN mv Adafruit_Python_DHT/Adafruit_DHT/ /app
 RUN pip3 install paho-mqtt
 
 # Add and run application
-RUN mkdir /app 
 ADD application.py /app/application.py
 CMD [ "python", "/app/application.py" ]
