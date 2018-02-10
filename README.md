@@ -1,6 +1,13 @@
 # sensor_network
 
 
+## Docker image
+Get Docker image with example application here
+```
+https://hub.docker.com/r/christianbillp/sensor_network/
+
+docker pull christianbillp/sensor_network
+```
 
 ## mongo.conf format
 ```
