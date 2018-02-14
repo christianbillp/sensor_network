@@ -1,5 +1,5 @@
-#FROM python:slim
-FROM python:alpine
+#FROM python:alpine
+FROM docker pull hypriot/rpi-alpine
 
 # Create folder for application
 RUN mkdir /app
